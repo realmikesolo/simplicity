@@ -22,9 +22,6 @@ resource "aws_lambda_function" "run_migrations" {
   timeout          = 6
 
   environment {
-    variables = {
-      AURORA_POSTGRESQL_CLUSTER_SECRET_ARN = module.aurora_postgresql.cluster_master_user_secret[0].secret_arn
-      AURORA_POSTGRESQL_CLUSTER_ARN        = module.aurora_postgresql.cluster_arn
-    }
+    variables = local.lambda_common_env
   }
 }

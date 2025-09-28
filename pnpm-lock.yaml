@@ -17,6 +17,9 @@ importers:
       postgres:
         specifier: 3.4.7
         version: 3.4.7
+      secure-json-parse:
+        specifier: ^4.0.0
+        version: 4.0.0
       zod:
         specifier: ^4.1.11
         version: 4.1.11
@@ -835,6 +838,9 @@ packages:
 
   resolve-pkg-maps@1.0.0:
     resolution: {integrity: sha512-seS2Tj26TBVOC2NIc2rOe2y2ZO7efxITtLZcGSOnHHNOQ7CkiUBfw0Iw2ck6xkIhPwLhKNLS8BO+hEpngQlqzw==}
+
+  secure-json-parse@4.0.0:
+    resolution: {integrity: sha512-dxtLJO6sc35jWidmLxo7ij+Eg48PM/kleBsxpC8QJE0qJICe+KawkDQmvCMZUr9u7WKVHgMW6vy3fQ7zMiFZMA==}
 
   source-map-support@0.5.21:
     resolution: {integrity: sha512-uBHU3L3czsIyYXKX88fdrGovxdSCoTGDRZ6SYXtSRxLZUzHg5P/66Ht6uoUlHu9EZod+inXhKo3qQgwXUT/y1w==}
@@ -1791,6 +1797,8 @@ snapshots:
   postgres@3.4.7: {}
 
   resolve-pkg-maps@1.0.0: {}
+
+  secure-json-parse@4.0.0: {}
 
   source-map-support@0.5.21:
     dependencies:
